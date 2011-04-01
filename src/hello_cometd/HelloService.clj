@@ -16,4 +16,5 @@
   (let [input (.getDataAsMap message)
         name (.get input "name")
         result {"greeting" (str "Hello, " name)}]
-    (.deliver remote (.getServerSession this) "/hello" result nil)))
+    (.deliver remote (.getServerSession this) "/hello" result nil)
+    true))
