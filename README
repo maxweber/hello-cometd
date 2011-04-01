@@ -1,0 +1,18 @@
+# hello-cometd
+
+This is a minimal hello world example how to use CometD (http://cometd.org/) in Clojure. It is almost the same example as its Java equivalent in the CometD primer (http://cometd.org/documentation/howtos/primer).
+
+## Usage
+
+Get all dependencies with "lein deps" and invoke "lein compile" to compile the comet.HelloService Java class. In the hello-cometd.core namespace you can start the Jetty Server by evaluating the line (def server (start-server)). Alternatively you can do the following in the REPL:
+(use 'hello-cometd.core)
+(def server (start-server))
+
+After that step open your Browser and go to http://localhost:8080/ to see the example.
+
+
+## License
+
+Copyright (C) 2010 Maximilian Weber
+
+Distributed under the Eclipse Public License, the same as Clojure.
